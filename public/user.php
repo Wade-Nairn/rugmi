@@ -12,9 +12,6 @@ require_once "../models/image.model.php";
 require_once "../models/images.collection.php";
 
 
-
-
-
 //  logic
 
 // Auth::kickout();
