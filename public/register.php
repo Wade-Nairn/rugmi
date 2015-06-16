@@ -13,7 +13,6 @@ require_once '../models/user.model.php';
 
 #2. Logic
 
-
 if($_POST){
 	
 	$user = new User();
