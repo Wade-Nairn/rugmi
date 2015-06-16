@@ -4,7 +4,7 @@
 
 # 1. Require libraries and models
 
-require_once '../libraries/login.lib.php';
+require_once '../libraries/auth.lib.php';
 require_once '../libraries/url.lib.php';
 require_once '../libraries/form.lib.php'; 
 
