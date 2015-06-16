@@ -1,6 +1,6 @@
 <?php
 
-# login.php
+# register.php
 
 # 1. Require libraries and models
 
@@ -12,7 +12,6 @@ require_once '../models/user.model.php';
 
 
 #2. Logic
-
 
 if($_POST){
 	
