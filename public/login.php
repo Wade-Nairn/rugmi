@@ -4,9 +4,9 @@
 
 # 1. Require libraries and models
 
-require_once '../libs/auth.lib.php';
-require_once '../libs/url.lib.php';
-require_once '../libs/form.lib.php';
+require_once '../libraries/auth.lib.php';
+require_once '../libraries/url.lib.php';
+require_once '../libraries/form.lib.php';
 
 require_once '../models/user.model.php';
 

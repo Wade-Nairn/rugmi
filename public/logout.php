@@ -2,8 +2,8 @@
 
 # logout.php
 
-require_once '../libs/auth.lib.php';
-require_once '../libs/url.lib.php';
+require_once '../libraries/auth.lib.php';
+require_once '../libraries/url.lib.php';
 
 Auth::log_out();
 
