@@ -12,9 +12,9 @@ class Config{
 
 	public static $database = [
 		'hostname' => 'localhost',
-		'username' => '',
-		'password' => '',
-		'database' => ''
+		'username' => 'michaeld',
+		'password' => 'admin1234',
+		'database' => 'michaeld_rugmi'
 	];
 	
 
