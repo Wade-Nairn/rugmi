@@ -1,6 +1,6 @@
 <?php
 
-# login.php
+# register.php
 
 # 1. Require libraries and models
 
