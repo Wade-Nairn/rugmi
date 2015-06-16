@@ -1,6 +1,6 @@
 <?php
 # comments.collection.php
-require_once '../libs/collection.lib.php';
+require_once '../libraries/collection.lib.php';
 class Comments_Collection extends Collection{
 	# Tell the page model what table it belongs to
 	protected $table = 'images';
