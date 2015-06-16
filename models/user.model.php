@@ -1,5 +1,5 @@
 <?php
-require_once '../libs/model.lib.php';
+require_once '../libraries/model.lib.php';
 class User extends Model{
 	
 	# Tell the page model what table it belongs to
