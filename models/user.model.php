@@ -1,4 +1,7 @@
 <?php
+
+# user.model.php
+
 require_once '../libraries/model.lib.php';
 class User extends Model{
 	
