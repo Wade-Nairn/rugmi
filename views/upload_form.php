@@ -14,7 +14,6 @@
 		<?= Form::close() ?>
 	<?else:?>
 		<a href="register.php"><h1>Must Create Account in order to upload</h1></a>
-
 	<?endif;?>	
 	
 

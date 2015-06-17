@@ -12,18 +12,18 @@ header{
 	color: white;
 	background: #aaa;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 }
 nav ul{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
 }
 li{
 	list-style-type: none;
 }
 nav a{
-	padding: 2em;
-	margin: 1em;
+	padding: 1em;
+}
+
+.form-row{
+	display:flex;
 }

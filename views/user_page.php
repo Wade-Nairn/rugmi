@@ -3,8 +3,7 @@
 	<div class="upload">
 		<a href="upload_image.php">Upload New Image</a>
 	</div>
-
-
+	
 	<ul>
 		<li>
 			<? if($images->items == 0):  ?>

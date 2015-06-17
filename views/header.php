@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="../public/assets/css/style.css">
 </head>
 <body>
-		
+	
 		<header>
 			<h1>RUMGI</h1>
 		<nav>
