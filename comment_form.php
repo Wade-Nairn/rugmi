@@ -1,6 +1,3 @@
-<?php 
-
-# comment_form.php
 
 <div class="main"> 
   
