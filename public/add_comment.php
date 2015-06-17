@@ -13,7 +13,7 @@ require_once '../model/comments.collection.php';
 
 # 2. Logic:
 
-Auth::kickout('login.php');
+//Auth::kickout('login.php');
 
 if($_POST && $_POST['content'] != ''){
 
