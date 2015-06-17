@@ -1,26 +1,24 @@
-<?php
+<?php 
 
-// libraries
+# Not sure.. change whatever.
 
-require_once "../libraries/auth.lib.php";
-require_once "../libraries/form.lib.php";
-require_once "../libraries/upload.lib.php";
-require_once "../libraries/url.lib.php";
+# delete_image.php
 
-require_once "../models/image.model.php";
+# 1. Libraries and Models:
 
+require_once '../libraries/form.lib.php';
+require_once '../libraries/upload.lib.php';
+require_once '../libraries/url.lib.php';
+require_once '../model/image.model.php';
 
-
-// logic
+# 2. Logic:
 
 Auth::kickout('login.php');
+$file = new File();
+$file -> load($_GET['id']);
+//$file-> (int)$_GET['id'];
+$file -> delete();
 
-$image = new Image();
-$image = $_GET($image['id']);
-$image->delete();
+# 3. Redirect:
 
-
-
-//  views / redirect
-
-URL::redirect('user.php');
+URL::redirect('image_list.php'); //image_list.php or login.php?
