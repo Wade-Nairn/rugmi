@@ -10,7 +10,7 @@ require_once '../model/comment.model.php';
 
 # 2. Logic:
 
-Auth::kickout('login.php');
+//Auth::kickout('login.php');
 
 $comment = new Comment();
 $comment -> load($_GET['id']);
