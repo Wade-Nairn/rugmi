@@ -28,5 +28,5 @@ if($_POST && $_POST['content'] != ''){
 include '../views/header.php';
 include '../views/login_form.php';
 include '../views/comment_form.php';
-
+include '../views/upload_form.php';
 include '../views/footer.php';
