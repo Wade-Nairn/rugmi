@@ -1,0 +1,29 @@
+body {
+	font-family: helvetica;
+	margin: 0 auto;
+}
+
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+header{
+	color: white;
+	background: #aaa;
+	display: flex;
+	justify-content: space-between;
+}
+nav ul{
+	display: flex;
+}
+li{
+	list-style-type: none;
+}
+nav a{
+	padding: 1em;
+}
+
+.form-row{
+	display:flex;
+}

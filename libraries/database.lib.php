@@ -204,7 +204,7 @@ class Database{
 
 
 	public function get_columns($table){
-		$field_query = 'SELECT column_name FROM information_schema.columns WHERE table_name = "'.$table.'" AND table_schema = "'.$credentials['database'].'" ORDER BY ordinal_position';
+		$field_query = 'SELECT column_name FROM information_schema.columns WHERE table_name = "'.$table.'" AND table_schema = "'.Config::$database['database'].'" ORDER BY ordinal_position';
 		$result = $this->assoc($this->connection->query($field_query));
 
 		foreach($result as $key => $field){
@@ -399,6 +399,15 @@ class Database{
 		if(!$result) $this->report_query_error($query, true);
 
 		return $result;
+	}
+	
+	
+	
+	public function query($query, $return_boolean = false){
+		
+		$result = $this->assoc($this->run($query));
+		
+		return $return_boolean ? (bool)$result : $result;
 	}
 	
 

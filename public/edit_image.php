@@ -29,7 +29,6 @@ $image->save();
 
 //  views / redirect
 
- include '../views/header.php';
- include '../views/upload_form.php';
- include '../views/footer.php';
-
+include '../views/header.php';
+include '../views/edit_image_form.php';
+include '../views/footer.php';
