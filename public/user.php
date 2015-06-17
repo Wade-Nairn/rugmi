@@ -19,8 +19,6 @@ require_once "../models/images.collection.php";
 $images = new Images_Collection();
 
 
-
-
 //  views
 
 include '../views/header.php';
