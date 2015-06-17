@@ -19,8 +19,8 @@
   
   <? if($comment->id): ?>
   
-    <a href="delete_comment.php?id=<?= $comment->id ?">>Delete</a>
-    <a href="edit_comment.php?id=<?= $comment->id ?">>Edit</a>
+    <a href="delete_comment.php?id=<?= $comment->id ?>">Delete</a>
+    <a href="edit_comment.php?id=<?= $comment->id ?>">Edit</a>
   
   <? endif; ?>
   
