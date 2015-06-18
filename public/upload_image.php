@@ -14,21 +14,25 @@ require_once "../models/user.model.php";
 
 // logic
 
-// Auth::kickout('login.php');
+Auth::kickout('login.php');
 
-$image = new Image();
+$image = new Image();	
 
 
 if($_FILES){
+	
+	$files = Upload::to_folder('assets/uploads/');	
 
-	$files = Upload::to_folder('assets/uploads');	
+
 	$image->url = $files[0]['filepath'];
 
 	$image->caption = $_POST['caption'];
 
 	$image->save();
 
+	URL::redirect('user.php');
 }
+
 
 
 //  views / redirect
