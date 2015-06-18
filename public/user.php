@@ -19,7 +19,7 @@ require_once "../models/images.collection.php";
 
 $user = new User();
 
-$images = new Images_Collection();
+$images = new Images_Collection(['deleted' => '0']);
 
 //  views
 

@@ -14,17 +14,18 @@ require_once "../models/user.model.php";
 
 // logic
 
-// Auth::kickout('login.php');
+Auth::kickout('login.php');
 
-
+$image = new Image();
+$image->load($_GET['id']);
 
 if($_POST){
 
-$image = new Image();
+	$image->caption = $_POST['caption'];
 
-$image->caption = $_POST('caption');
+	$image->save();
 
-$image->save();
+	URL::redirect('user.php');
 
 }
 

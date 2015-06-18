@@ -26,11 +26,12 @@ if($_FILES){
 
 	$image->url = $files[0]['filepath'];
 
-	$image->caption = $_POST['caption'];
 
+	$image->caption = $_POST['caption'];
+	$image->user_id = Auth::user_id();
 	$image->save();
 
-	URL::redirect('user.php');
+	URL::redirect('user.php'); 
 }
 
 

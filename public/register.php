@@ -21,7 +21,7 @@ if($_POST){
 	$user->password  = $_POST['password'];
 
 	$user->save();
-
+	Auth::log_in($user->id);
 	URL::redirect('index.php');
 }
 

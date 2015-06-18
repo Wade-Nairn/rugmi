@@ -4,9 +4,9 @@
 
 # 1. Libraries and Models:
 
-require_once '../libraries/login.lib.php';
+require_once '../libraries/auth.lib.php';
 require_once '../libraries/url.lib.php';
-require_once '../model/comment.model.php';
+require_once '../models/comment.model.php';
 
 # 2. Logic:
 
@@ -18,4 +18,4 @@ $comment -> delete();
 
 # 3. Redirect:
 
-URL::redirect('comment_form.php'); //comment_form.php or login.php
+URL::redirect('index.php'); //comment_form.php or login.php

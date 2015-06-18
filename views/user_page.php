@@ -1,26 +1,37 @@
 <div class="main">
 	
-	<ul>
-		<li>
-			<? if(count($images->items) == 0):  ?>
+	
+
+	
+	<? if(count($images->items) == 0):  ?>
 			<p>You have no images</p>
-		</li>	
+	<? else: ?>	
+	<ul>
+	
+		<? foreach($images->items as $image):?>
+		<? if( $image->user_id == Auth::user_id() ): ?>
+			
+			<li>
+				
+						<img src="<?= $image->url ?>" alt="">
+						<p><?= $image->caption ?></p>
+						
+						<a href="edit_image.php?id=<?= $image->id ?>">Edit Image</a>
+						
+						<a href="delete_image.php?id=<?= $image->id ?>">Delete Image</a>
 
-	<? else: ?>
-		<li>
-
-			<? foreach($images->items as $image):?>
-					<img src="<?= $image->url ?>" alt="">
-					<p><?= $image->caption ?></p>
 					
-					<a href="edit_image.php?id=<?= $image->id ?>">Edit Image</a>
-					
-					<a href="delete_image.php?id=<?= $image->id ?>">Delete Image</a>
-			<? endforeach; ?>		
-		</li>
+			</li>
 
-	<? endif; ?>
+			
+
+			<? endif; ?>
+		<? endforeach; ?>
+	
 	</ul>
+	<? endif; ?>
+
+	
 
 
 </div>
