@@ -18,11 +18,15 @@ require_once "../models/user.model.php";
 
 $image = new Image();
 
-if($_POST){
 
-$image->caption = $_POST('caption');
+if($_FILES){
 
-$image->save();
+	$files = Upload::to_folder('assets/uploads');	
+	$image->url = $files[0]['filepath'];
+
+	$image->caption = $_POST['caption'];
+
+	$image->save();
 
 }
 

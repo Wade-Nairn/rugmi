@@ -12,12 +12,13 @@
 		<nav>
 			
 			<ul>
-				<li><a href="login.php">Login</a></li>
-				<li><a href="register.php">Register</a></li>
-			
-				<li><a href="user.php">My Page</a></li>
-				<li><a href="upload_image.php">Upload New Image</a></li>
-
+				<? if(Auth::is_Logged_in()): ?> 
+					<li><a href="user.php">My Page</a></li>
+					<li><a href="upload_image.php">Upload New Image</a></li>
+				<? else: ?>
+					<li><a href="login.php">Login</a></li>
+					<li><a href="register.php">Register</a></li>
+				<? endif; ?>
 			
 			</ul>
 		</nav>

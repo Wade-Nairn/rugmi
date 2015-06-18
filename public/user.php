@@ -19,7 +19,11 @@ require_once "../models/images.collection.php";
 
 // Auth::kickout();
 
+$user = new User();
+
 $images = new Images_Collection();
+
+
 
 
 

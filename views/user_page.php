@@ -13,11 +13,11 @@
 
 	<? else: ?>
 		<li>
-			<? while($images->items as $image): ?>
+			<? while($images as $image) ?>
 					<img src="<?= $image->url ?>" alt="">
 					<p><?= $image->caption ?></p>
-					<a href="edit_image">Edit Image</a>
-					<a href="delete_image">Delete Image</a>
+					<a href="edit_image.php?=<?= $image['id'] ?>">Edit Image</a>
+					<a href="delete_image.php?=<?= $image['id'] ?>">Delete Image</a>
 			<? endwhile; ?>		
 		</li>
 

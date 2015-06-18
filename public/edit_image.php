@@ -16,9 +16,11 @@ require_once "../models/user.model.php";
 
 // Auth::kickout('login.php');
 
-$image = new Image();
+
 
 if($_POST){
+
+$image = new Image();
 
 $image->caption = $_POST('caption');
 
