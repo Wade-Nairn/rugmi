@@ -1,2 +1,7 @@
 libraries/config.lib.php
+<<<<<<< HEAD
 sftp-config.json
+=======
+.DS_STORE
+._*
+>>>>>>> 07cd3a3cdfdac99d093d7da02d9c96356143c3c6

@@ -1,26 +1,25 @@
-<?php
+<?php 
 
-// libraries
+# delete_image.php
 
-require_once "../libraries/auth.lib.php";
-require_once "../libraries/form.lib.php";
-require_once "../libraries/upload.lib.php";
-require_once "../libraries/url.lib.php";
+# 1. Libraries and Models:
 
-require_once "../models/image.model.php";
+require_once '../libraries/form.lib.php';
+require_once '../libraries/upload.lib.php';
+require_once '../libraries/url.lib.php';
+require_once '../model/image.model.php';
 
-
-
-// logic
+# 2. Logic:
 
 Auth::kickout('login.php');
 
 $image = new Image();
+
 $image = $_GET($image['id']);
+
 $image->delete();
 
 
-
-//  views / redirect
+# 3. Redirect:
 
 URL::redirect('user.php');

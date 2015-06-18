@@ -12,9 +12,6 @@ require_once "../models/image.model.php";
 require_once "../models/images.collection.php";
 
 
-
-
-
 //  logic
 
 // Auth::kickout();
@@ -22,11 +19,6 @@ require_once "../models/images.collection.php";
 $user = new User();
 
 $images = new Images_Collection();
-
-
-
-
-
 
 //  views
 
