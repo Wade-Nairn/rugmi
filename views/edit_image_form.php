@@ -1,6 +1,6 @@
 <div class="main">
 
-	<?= 
+
 	
 	<?= Form::open() ?>
 	<div class="form-row">
