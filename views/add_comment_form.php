@@ -1,7 +1,7 @@
-<div class="main"> 
+
 
 <div class="main">
-
+  <div class="single-image">
     
       <img src="<?= $image->url ?>" alt="">
 
@@ -26,10 +26,12 @@
                         <ul class="comment-list">                              
                           <li>
                               <p><?= $comment->content ?></p>
-                              <? if($comment->user_id == Auth::user_id()): ?>
+                              <div class="comment-buttons">
+                              <? if($comment->user_id == Auth::user_id() || $image->user_id == Auth::user_id()): ?>
                                 <a href="edit_comment.php?id=<?= $comment->id ?>">Edit Comment</a>
-                                <a href="delete_comment.php?id=<?= $comment->id ?>" class="delete">Delete Comment</a>
+                                <a href="delete_comment.php?id=<?= $comment->id ?>&image_id=<?= $image->id ?>" class="delete">Delete Comment</a>
                               <? endif; ?>
+                              </div>
                           <li>
 
                         </ul>
@@ -37,6 +39,7 @@
                     <? endif; ?>
                   <? endforeach; ?> 
                 
+              </div>
               </div>
                       
                 

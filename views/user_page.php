@@ -11,15 +11,16 @@
 		<? foreach($images->items as $image):?>
 		<? if( $image->user_id == Auth::user_id() ): ?>
 			
-			<li>
+			<li class="block">
 				
-						<img src="<?= $image->url ?>" alt="">
+						<a href="image_page.php?id=<?=$image->id ?>"><img src="<?= $image->url ?>" alt=""></a>
 						<p><?= $image->caption ?></p>
-						
-						<a href="edit_image.php?id=<?= $image->id ?>">Edit Image</a>
-						
-						<a href="delete_image.php?id=<?= $image->id ?>">Delete Image</a>
 
+						
+						<a href="edit_image.php?id=<?= $image->id ?>" class="img">Edit Image</a>
+						
+						<a href="delete_image.php?id=<?= $image->id ?>" class="img">Delete Image</a>
+						
 					
 			</li>
 

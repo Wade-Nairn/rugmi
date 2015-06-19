@@ -29,6 +29,7 @@ $image->load($comment->image_id);
 if($_POST && $_POST['content'] != ''){
 	$comment->content = $_POST['content'];
 	$comment->save();
+	URL::redirect('image_page.php?id='.$image->id);
 }
 # 3. Views:
 

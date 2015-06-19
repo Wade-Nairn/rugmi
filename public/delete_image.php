@@ -18,8 +18,11 @@ Auth::kickout('login.php');
 $image = new Image();
 
 $image->load($_GET['id']);
+if( $image->user_id == Auth::user_id()){
+	 $image->delete();
+}
 
-$image->delete();
+
 
 
 # 3. Redirect:

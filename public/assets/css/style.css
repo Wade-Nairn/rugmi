@@ -1,24 +1,33 @@
 body {
 	font-family: helvetica;
 	margin: 0 auto;
+	background-color: #eee;
+	display:flex;
+	flex-direction: column;
+	min-height: 100vh;
+
 }
 
 .container{
 	max-width: 960px;
 	margin: 0 auto;
+	flex: 1;
+
 }
 
 header{
 	color: white;
-	background: #aaa;
+	background: #bbb;
 	display: flex;
 	justify-content: space-between;
 }
 nav ul{
 	display: flex;
+
 }
 li{
 	list-style-type: none;
+
 }
 nav a{
 	padding: 1em;
@@ -27,24 +36,92 @@ nav a{
 .form-row{
 	display:flex;
 }
+.main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 960px;
+}
 .main ul{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+}
+.single-image{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 40%;
 }
 img{
-	max-width: 200px;
+	width: 200px;
+	height: 200px;
 }
 .block{
 	padding: 1em;
 	margin: 1em;
 	border: 1px solid #eee;
-	box-shadow: 2px 2px #eee;
+	border-radius: 8px;
+	box-shadow: 2px 2px white;
+	background-color: white
 }
-.comment-list a{
+.img{
 	font-size: 9px;
 	border: 1px solid #bbb;
 	border-radius: 4px;
 	text-decoration: none;
 	color: #bbb;
 	padding:4px;
+}
+
+.comments{
+	width: 100%;
+}
+.comment-list {
+	
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	text-decoration: none;
+	padding:4px;
+	background-color: white;
+}
+.comment-list li{
+	width: 100%;
+
+}
+.comment-buttons{
+	margin-bottom: 5px;
+	margin-left: 30%;
+}
+.comment-list a{
+	font-size: 10px;
+	border: 1px solid limegreen;
+	border-radius: 4px;
+	text-decoration: none;
+	color: white;
+	padding:4px;
+	background-color: limegreen;
+	
+}
+.comment-list a:hover{
+	color:black;
+}
+.add-comment{
+	font-size: 12px;
+	border: 1px solid limegreen;
+	border-radius: 4px;
+	text-decoration: none;
+	color: white;
+	padding:5px;
+	background-color: limegreen;
+	margin-bottom: 2em;
+}
+.add-comment a:hover{
+	color: black;
+}
+footer{
+	height: 4em;
+	background-color: #bbb;
+	bottom: 0;
 }

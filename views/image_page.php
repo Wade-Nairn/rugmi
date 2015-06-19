@@ -1,7 +1,7 @@
 
 <div class="main">
 
-		
+		<div class="single-image">
 			<img src="<?= $image->url ?>" alt="">
 
 
@@ -16,28 +16,31 @@
 													
 													<li>
 														<p><?= $comment->content ?></p>
-														<? if($comment->user_id == Auth::user_id() || $image->user_id == Auth::user_id()): ?>
-															<a href="edit_comment.php?id=<?= $comment->id ?>">Edit Comment</a>
-															<a href="delete_comment.php?id=<?= $comment->id ?>" class="delete">Delete Comment</a>
-														<? endif; ?>
-													<li>
+														<div class="comment-buttons">
+															<? if($comment->user_id == Auth::user_id()): ?>
+																<a href="edit_comment.php?id=<?= $comment->id ?>">Edit Comment</a>
+															<? endif; ?>
+															<? if($comment->user_id == Auth::user_id() || $image->user_id == Auth::user_id()): ?>	
+																<a href="delete_comment.php?id=<?= $comment->id ?>&image_id=<?= $image->id ?>" class="delete">Delete Comment</a>
+															<? endif; ?>
+														</div>
+													</li>
 
 													
 
 												</ul>
 											<? endif; ?>
 										<? endif; ?>
-									<? endforeach; ?>	
+									<? endforeach; ?>
+								</div>
+
 								<? if(Auth::user_id() ): ?>
-									<a href="add_comment.php?id=<?=$image->id ?>">Add Comment</a>
+									<a href="add_comment.php?id=<?=$image->id ?>" class="add-comment">Add Comment</a>
 								<? endif; ?>
 
-							</div>
+							
 											
 									
-				
-
-	
-
+		</div>
 
 </div>
