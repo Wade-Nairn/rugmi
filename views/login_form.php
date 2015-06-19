@@ -1,20 +1,25 @@
-	<div>
-		<h1>Login</h1>
+<div>
+		
+	<h1>Login</h1>
 
-
-		<?=Form::open()?>
+	<?=Form::open()?>
 			
-			<div class="row">
-				<?=Form::label('username', 'Username')?>
-				<?=Form::text('username')?>		
-			</div>
+		<div class="row">
+				
+			<?=Form::label('username', 'Username')?>
+			<?=Form::text('username')?>		
 			
-			<div class="row">
-				<?=Form::label('password', 'Password')?>
-				<?=Form::password('password')?>		
-			</div>
+		</div>
+			
+		<div class="row">
+				
+			<?=Form::label('password', 'Password')?>
+			<?=Form::password('password')?>		
+			
+		</div>
 
-			<?=Form::submit('Log on')?>
+		<?=Form::submit('Log on')?>
 
-		<?=Form::close()?>
-	</div>
+	<?=Form::close()?>
+
+</div>

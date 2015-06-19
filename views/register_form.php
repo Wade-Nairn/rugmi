@@ -1,20 +1,25 @@
-	<div>
-		<h1>Register</h1>
+<div>
+	
+	<h1>Register</h1>
 
-
-		<?=Form::open()?>
+	<?=Form::open()?>
 			
-			<div class="row">
-				<?=Form::label('username', 'Username')?>
-				<?=Form::text('username')?>		
-			</div>
+		<div class="row">
 			
-			<div class="row">
-				<?=Form::label('password', 'Password')?>
-				<?=Form::password('password')?>		
-			</div>
+			<?=Form::label('username', 'Username')?>
+			<?=Form::text('username')?>		
+		
+		</div>
+			
+		<div class="row">
+	
+			<?=Form::label('password', 'Password')?>
+			<?=Form::password('password')?>		
+	
+		</div>
 
-			<?=Form::submit('Create User')?>
+		<?=Form::submit('Create User')?>
 
-		<?=Form::close()?>
-	</div>
+	<?=Form::close()?>
+
+</div>

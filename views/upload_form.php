@@ -1,13 +1,16 @@
 <div class="main">
 
+
+
 	<?if(Auth::is_logged_in()):?>
 
-		<?= Form::open(); ?>
+
+			<?= Form::open_upload(); ?>
 
 		<div class="form-row">
 
 			<?= Form::label('url', 'Upload Image' ) ?>
-			<?= Form::file('url') ?>
+			<?= Form::file() ?>
 		
 		</div>
 		
@@ -18,7 +21,7 @@
 		
 		</div>
 		
-		<?= Form::submit('Submit') ?>
+		<?= Form::submit('Upload') ?>
 		
 		<?= Form::close() ?>
 	
@@ -28,6 +31,5 @@
 	
 	<?endif;?>	
 	
-
 
 </div>	

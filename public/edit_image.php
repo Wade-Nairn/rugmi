@@ -1,31 +1,25 @@
 <?php
 
+
 // libraries
 
 require_once "../libraries/auth.lib.php";
 require_once "../libraries/form.lib.php";
 require_once "../libraries/upload.lib.php";
 require_once "../libraries/url.lib.php";
-
 require_once "../models/image.model.php";
 require_once "../models/user.model.php";
 
-
-
 // logic
 
-// Auth::kickout('login.php');
-
+Auth::kickout('login.php');
 $image = new Image();
-
+$image->load($_GET['id']);
 if($_POST){
-
-$image->caption = $_POST('caption');
-
-$image->save();
-
+	$image->caption = $_POST['caption'];
+	$image->save();
+	URL::redirect('user.php');
 }
-
 
 //  views / redirect
 

@@ -1,0 +1,36 @@
+[18-Jun-2015 15:30:19 Pacific/Auckland] PHP Fatal error:  Array callback has to contain indices 0 and 1 in /home/marionrobles/public_html/rugmi/public/upload_image.php on line 23
+[18-Jun-2015 15:44:58 Pacific/Auckland] PHP Fatal error:  Array callback has to contain indices 0 and 1 in /home/marionrobles/public_html/rugmi/public/upload_image.php on line 23
+[18-Jun-2015 15:48:33 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 15
+[18-Jun-2015 15:52:11 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 15
+[18-Jun-2015 16:02:55 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 15
+[18-Jun-2015 16:03:40 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 15
+[18-Jun-2015 16:03:42 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 15
+[18-Jun-2015 16:03:59 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 15
+[18-Jun-2015 16:07:12 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 15
+[18-Jun-2015 16:07:13 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 15
+[18-Jun-2015 16:09:01 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 16:09:23 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'AS' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 16:09:55 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'AS' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 16:09:56 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'AS' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 16:10:06 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'AS' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 16:11:30 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'AS' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 16:11:32 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'AS' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 16:21:23 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'AS' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 16:22:16 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'AS' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 16:22:18 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'AS' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 16:42:05 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'AS' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 17:06:32 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'AS' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 17:07:06 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'AS' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 17:14:29 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'AS' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 17:14:33 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'AS' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 17:15:25 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 17:49:42 Pacific/Auckland] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/marionrobles/public_html/rugmi/public/user.php on line 21
+[18-Jun-2015 17:49:58 Pacific/Auckland] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/marionrobles/public_html/rugmi/public/user.php on line 21
+[18-Jun-2015 17:50:09 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 17:50:28 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[18-Jun-2015 17:50:29 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[19-Jun-2015 16:14:39 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/marionrobles/public_html/rugmi/views/user_page.php on line 23
+[19-Jun-2015 16:14:50 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'id' (T_STRING) in /home/marionrobles/public_html/rugmi/public/upload_image.php on line 34
+[19-Jun-2015 16:15:18 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'id' (T_STRING) in /home/marionrobles/public_html/rugmi/public/upload_image.php on line 34
+[19-Jun-2015 16:15:31 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'id' (T_STRING) in /home/marionrobles/public_html/rugmi/public/upload_image.php on line 34
+[19-Jun-2015 16:15:42 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'id' (T_STRING) in /home/marionrobles/public_html/rugmi/public/upload_image.php on line 34
