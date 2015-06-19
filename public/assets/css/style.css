@@ -27,3 +27,24 @@ nav a{
 .form-row{
 	display:flex;
 }
+.main ul{
+	display: flex;
+	flex-direction: row;
+}
+img{
+	max-width: 200px;
+}
+.block{
+	padding: 1em;
+	margin: 1em;
+	border: 1px solid #eee;
+	box-shadow: 2px 2px #eee;
+}
+.comment-list a{
+	font-size: 9px;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #bbb;
+	padding:4px;
+}

@@ -1,10 +1,15 @@
 <?php 
+
 # edit_comment.php
 
 # 1. Libraries and Models:
 
 require_once '../libraries/form.lib.php';
 require_once '../libraries/auth.lib.php';
+require_once '../libraries/url.lib.php';
+
+require_once '../models/image.model.php';
+
 require_once '../models/comment.model.php';
 require_once '../models/comments.collection.php';
 
@@ -12,8 +17,14 @@ require_once '../models/comments.collection.php';
 
 Auth::kickout('login.php');
 
+$comments = new Comments_Collection(['deleted' => '0']);
+
+
 $comment = new Comment();
 $comment->load($_GET['id']);
+
+$image = new Image();
+$image->load($comment->image_id);
 
 if($_POST && $_POST['content'] != ''){
 	$comment->content = $_POST['content'];
@@ -22,6 +33,5 @@ if($_POST && $_POST['content'] != ''){
 # 3. Views:
 
 include '../views/header.php';
-// include '../views/login_form.php';
-include '../views/comment_form.php';
+include '../views/edit_comment_form.php';
 include '../views/footer.php';

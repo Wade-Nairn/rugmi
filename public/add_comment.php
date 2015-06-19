@@ -17,6 +17,8 @@ require_once '../models/comments.collection.php';
 
 Auth::kickout('login.php');
 
+$comments = new Comments_Collection(['deleted' => '0']);
+
 $image = new Image();
 $image->load($_GET['id']);
 
@@ -30,12 +32,11 @@ if($_POST && $_POST['content'] != ''){
 	$comment->image_id = $image->id;
 	$comment -> save();
 
-	URL::redirect('index.php');
+	URL::redirect('image_page.php?id='.$image->id);
 }
 
 # 3. Views:
 
 include '../views/header.php';
-// include '../views/login_form.php';
-include '../views/comment_form.php';
+include '../views/add_comment_form.php';
 include '../views/footer.php';

@@ -8,13 +8,12 @@
 <body>
 	
 		<header>
-			<h1>RUMGI</h1>
+			<a href="index.php"><h1>RUMGI</h1></a>
 		<nav>
 			
 			<ul>
 
 				<?if(auth::is_logged_in()):?>
-					<li><a href="index.php">Home</a></li>
 					<li><a href="logout.php">Logout</a></li>
 					<li><a href="user.php">My Page</a></li>
 					<li><a href="upload_image.php">Upload New Image</a></li>
